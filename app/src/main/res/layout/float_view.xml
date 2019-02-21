@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="horizontal">
+
+        <com.zyl.Utils.RoundImageView
+            android:id="@+id/iv_cpu_temp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/cpu"
+            android:background="@drawable/circle_background"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textViewTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPU温度" />
+
+            <TextView
+                style="@style/textViewTheme"
+                android:id="@+id/tv_cpu_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="20°C"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="horizontal">
+
+        <com.zyl.Utils.RoundImageView
+            android:id="@+id/iv_battery_temp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/battery_70"
+            android:background="@drawable/circle_background"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textViewTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电池温度" />
+
+            <TextView
+                style="@style/textViewTheme"
+                android:id="@+id/tv_battery_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="20°C"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="horizontal">
+
+        <com.zyl.Utils.RoundImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/hz"
+            android:background="@drawable/circle_background"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textViewTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPU频率" />
+
+            <TextView
+                android:id="@+id/tv_cpu_hz"
+                style="@style/textViewTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="2.8GHz"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="horizontal">
+
+        <com.zyl.Utils.RoundImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/memory"
+            android:background="@drawable/circle_background"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textViewTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内存使用" />
+
+            <TextView
+                android:id="@+id/tv_mem_usage"
+                style="@style/textViewTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="10%"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
